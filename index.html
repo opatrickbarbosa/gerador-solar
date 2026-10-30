@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kilovia · Propuestas solares en 3 minutos</title>
+<meta name="description" content="Tu propuesta de autoconsumo lista en 3 minutos, desde el móvil. Pago único, sin cuotas.">
+<meta name="theme-color" content="#0B1B2B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1B2B'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23FF7A1A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/i18n.js"></script>
+</head>
+<body data-title="title">
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Kilovia"><i aria-hidden="true"></i>kilovia</a>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es">ES</button><button type="button" data-lang="ca">CA</button><button type="button" data-lang="pt">PT</button>
+      </div>
+      <button class="btn sm" type="button" data-open data-i18n="nav_cta"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero dark">
+  <div class="gridlines" aria-hidden="true"></div>
+  <div class="orb sun" data-speed="-0.25" aria-hidden="true"></div>
+  <div class="orb blue" data-speed="0.15" aria-hidden="true"></div>
+  <div class="wrap grid">
+    <div class="copy">
+      <p class="eyebrow rv" data-i18n="eyebrow"></p>
+      <h1 class="rv d1" data-i18n="h1"></h1>
+      <p class="lead rv d2" data-i18n="sub"></p>
+      <div class="rv d3" style="display:flex;flex-wrap:wrap;gap:18px;align-items:center">
+        <button class="btn" type="button" data-open><span data-i18n="cta"></span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <p class="note rv d3"><span data-i18n="n1"></span><span data-i18n="n2"></span><span data-i18n="n3"></span></p>
+    </div>
+
+    <div class="visual" aria-hidden="true">
+      <div data-speed="-0.06">
+        <div class="phone">
+          <div class="screen">
+            <div class="notch"></div>
+            <div class="app-top"><small data-i18n="in_small"></small><b data-i18n="in_title"></b></div>
+            <div class="app-body">
+              <div class="field"><small data-i18n="in_cons"></small><b data-i18n="in_cons_v"></b></div>
+              <div class="field on"><small data-i18n="in_tar"></small><b data-i18n="in_tar_v"></b></div>
+              <div class="field"><small data-i18n="in_roof"></small><b data-i18n="in_roof_v"></b></div>
+              <div class="field"><small>kWp</small><b>5,4</b></div>
+              <div class="app-btn" data-i18n="in_btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timer float" data-speed="0.12" style="left:-6px;bottom:90px"><i class="d"></i><div><small data-i18n="tm_l"></small><b id="clock">0:00</b></div></div>
+      <div class="chip blue float b" data-speed="-0.14" style="right:-4px;top:70px"><small>kWp</small><b>5,4</b></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;margin-bottom:48px">
+      <p class="eyebrow rv" data-i18n="v_eyebrow"></p>
+      <h2 class="rv d1" data-i18n="v_h2"></h2>
+    </div>
+    <div class="video rv d2" data-speed="0.04">
+      <!-- Sustituir el contenido por: <video src="/assets/demo.mp4" controls playsinline muted poster="/assets/demo.jpg"></video> -->
+      <div class="play"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="#0B1B2B"><path d="M8 5v14l11-7z"/></svg></div>
+      <p data-i18n="v_d"></p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow rv" data-i18n="p_eyebrow"></p>
+    <h2 class="rv d1" style="max-width:860px;margin-top:16px" data-i18n="p_h2"></h2>
+    <div class="compare">
+      <div class="panel rv">
+        <p class="tag" data-i18n="today"></p>
+        <p class="num"><span data-count="30">30</span><small>min</small></p>
+        <p style="color:var(--muted)" data-i18n="today_d"></p>
+      </div>
+      <div class="panel hi rv d1">
+        <p class="tag" data-i18n="with"></p>
+        <p class="num"><span data-count="3">3</span><small>min</small></p>
+        <p data-i18n="with_d"></p>
+      </div>
+    </div>
+    <div class="band rv">
+      <p class="num">~<span data-count="18">18</span><small>h</small></p>
+      <p data-i18n="hours_d"></p>
+    </div>
+    <p class="lead rv" style="margin-top:36px;max-width:760px;color:var(--ink);font-weight:500" data-i18n="speed"></p>
+  </div>
+</section>
+
+<section style="background:var(--white)">
+  <div class="wrap">
+    <p class="eyebrow rv" data-i18n="how_eyebrow"></p>
+    <h2 class="rv d1" style="max-width:820px;margin-top:16px" data-i18n="how_h2"></h2>
+    <div class="steps">
+      <div class="step rv"><span class="n">01</span><h3 data-i18n="s1t"></h3><p data-i18n="s1d"></p></div>
+      <div class="step rv d1"><span class="n">02</span><h3 data-i18n="s2t"></h3><p data-i18n="s2d"></p></div>
+      <div class="step rv d2"><span class="n">03</span><h3 data-i18n="s3t"></h3><p data-i18n="s3d"></p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow rv" data-i18n="calc_eyebrow"></p>
+      <h2 class="rv d1" style="margin-top:16px" data-i18n="calc_h2"></h2>
+      <ul class="list">
+        <li class="rv" data-i18n="c1"></li><li class="rv" data-i18n="c2"></li><li class="rv" data-i18n="c3"></li><li class="rv" data-i18n="c4"></li><li class="rv" data-i18n="c5"></li>
+      </ul>
+    </div>
+    <div class="domain rv d1">
+      <div class="orb sun" data-speed="-0.12" style="width:380px;height:380px;right:-160px;top:-160px" aria-hidden="true"></div>
+      <p class="eyebrow" data-i18n="dom_t"></p>
+      <h3 style="font-size:clamp(28px,4vw,40px)" data-i18n="dom_h"></h3>
+      <p class="url" data-i18n="dom_v"></p>
+      <p data-i18n="dom_d"></p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white)">
+  <div class="wrap price">
+    <p class="eyebrow rv" data-i18n="price_eyebrow"></p>
+    <h2 class="rv d1" data-i18n="price_h2"></h2>
+    <p class="num rv d2" data-i18n="price_v"></p>
+    <div class="pills rv d3"><span data-i18n="pr1"></span><span data-i18n="pr2"></span><span data-i18n="pr3"></span><span data-i18n="pr4"></span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv" style="text-align:center" data-i18n="faq_h2"></h2>
+    <div class="faq rv d1">
+      <details><summary data-i18n="q1"></summary><p data-i18n="a1"></p></details>
+      <details><summary data-i18n="q2"></summary><p data-i18n="a2"></p></details>
+      <details><summary data-i18n="q3"></summary><p data-i18n="a3"></p></details>
+      <details><summary data-i18n="q4"></summary><p data-i18n="a4"></p></details>
+      <details><summary data-i18n="q5"></summary><p data-i18n="a5"></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final dark" id="empezar">
+  <div class="gridlines" aria-hidden="true"></div>
+  <div class="wrap head">
+    <p class="eyebrow rv" data-i18n="f_eyebrow"></p>
+    <h2 class="rv d1" data-i18n="f_h2"></h2>
+    <p class="lead rv d2" data-i18n="f_sub"></p>
+    <div class="rv d3"><button class="btn" type="button" data-open><span data-i18n="f_cta"></span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+
+  <div class="stage" aria-hidden="true">
+    <div class="rays" data-speed="0.1"></div>
+    <div class="phone" data-speed="-0.08">
+      <div class="screen">
+        <div class="notch"></div>
+        <div class="doc">
+          <div class="doc-h"><span class="doc-logo"><i></i><span data-i18n="mk_co"></span></span><span class="doc-tag" data-i18n="mk_ex"></span></div>
+          <h4 data-i18n="mk_title"></h4>
+          <div class="cards">
+            <div class="c"><small data-i18n="mk_kwp"></small><b>5,4 kWp</b></div>
+            <div class="c"><small data-i18n="mk_prod"></small><b>7.900 kWh</b></div>
+            <div class="c sun"><small data-i18n="mk_save"></small><b data-i18n="mk_save_v"></b></div>
+            <div class="c"><small data-i18n="mk_ret"></small><b data-i18n="mk_ret_v"></b></div>
+          </div>
+          <div class="bars rv" id="bars">
+            <i style="height:38%"></i><i style="height:48%"></i><i style="height:66%"></i><i style="height:80%"></i><i style="height:92%"></i><i style="height:100%"></i><i style="height:98%"></i><i style="height:90%"></i><i style="height:74%"></i><i style="height:58%"></i><i style="height:42%"></i><i style="height:34%"></i>
+          </div>
+          <div class="pdf"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i18n="mk_pdf"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="chip sun float k1" data-speed="-0.2" style="left:max(8px,calc(50% - 330px));top:120px"><small data-i18n="ch1"></small><b data-i18n="ch1_v"></b></div>
+    <div class="chip blue float b k2" data-speed="-0.3" style="right:max(8px,calc(50% - 330px));top:250px"><small data-i18n="ch2"></small><b data-i18n="mk_save_v"></b></div>
+    <div class="chip float k3" data-speed="-0.15" style="left:max(8px,calc(50% - 300px));top:400px"><small data-i18n="ch3"></small><b data-i18n="ch3_v"></b></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#fff">kilovia</strong> · <span data-i18n="foot"></span></p>
+    <p><a class="wa" href="https://wa.me/34662695649" target="_blank" rel="noopener">+34 662 695 649</a> · <a href="/privacidad" data-i18n="priv_link"></a></p>
+  </div>
+</footer>
+
+<dialog id="lead" aria-labelledby="lead-t">
+  <div class="mbox" id="leadbox">
+    <div class="mhead">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <h3 id="lead-t" data-i18n="m_t"></h3>
+        <p style="color:var(--muted)" data-i18n="m_d"></p>
+      </div>
+      <button class="x" type="button" data-close data-i18n-aria="m_close">×</button>
+    </div>
+    <form id="leadform" novalidate>
+      <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website2" tabindex="-1" autocomplete="off"></label></div>
+      <label><span class="req" data-i18n="l_nombre"></span><input type="text" name="nombre" required autocomplete="name"></label>
+      <label><span class="req" data-i18n="l_empresa"></span><input type="text" name="empresa" required autocomplete="organization"></label>
+      <label><span class="req" data-i18n="l_email"></span><input type="email" name="email" required autocomplete="email"></label>
+      <label><span class="req" data-i18n="l_tel"></span><input type="tel" name="telefono" required autocomplete="tel"></label>
+      <label class="opt" style="align-items:flex-start"><input type="checkbox" name="privacidad" required style="margin-top:2px"><span class="req" data-i18n="l_priv"></span></label>
+      <button class="btn blue" type="submit" id="leadsend" data-i18n="m_send"></button>
+      <p class="status" id="leadstatus" role="status" aria-live="polite"></p>
+    </form>
+    <div class="done">
+      <div class="ok-ic"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1E4FD8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <h3 data-i18n="m_ok_t"></h3>
+      <p style="color:var(--muted)" data-i18n="m_ok_d"></p>
+      <a class="btn" id="tofiles" href="/enviar" data-i18n="m_ok_btn"></a>
+    </div>
+  </div>
+</dialog>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
